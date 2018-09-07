@@ -1,6 +1,6 @@
 # Site settings
-title: Editorial
-subtitle: by HTML5 UP
+title: Rampai
+subtitle: .id
 email: youremailaddress@gmail.com
 description: A FREE AND FULLY RESPONSIVE SITE TEMPLATE
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -31,3 +31,15 @@ sass:
     
 # Build settings
 markdown: kramdown
+
+# # Pagination 
+# paginate: 6
+# paginate_path: /page:num/
+
+plugins:
+  - jekyll-paginate
+# paginate: 2
+
+# Pagination 
+paginate: 8
+paginate_path: /page:num/

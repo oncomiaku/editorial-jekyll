@@ -8,6 +8,23 @@
 
 {% include head.html %}
 
+<style type="text/css">
+p {
+    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: -.003em;
+    font-size: 20px;
+    line-height: 1.58; }
+  @media screen and (max-width: 1680px) {
+    p {
+      font-size: 20px; } }
+  @media screen and (max-width: 1280px) {
+    p {
+      font-size: 18px; } }
+  @media screen and (max-width: 360px) {
+    p {
+      font-size: 16px; } }
+</style>
+
 <body>
 
     <!-- Wrapper -->
@@ -18,7 +35,6 @@
             <div class="inner">
 
                 {% include header.html %}
-                {% include banner.html %}
 
                 {{ content }}
 

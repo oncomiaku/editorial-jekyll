@@ -8,6 +8,23 @@
 
 {% include head.html %}
 
+<style type="text/css">
+p {
+    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: -.003em;
+    font-size: 20px;
+    line-height: 1.58; }
+  @media screen and (max-width: 1680px) {
+    p {
+      font-size: 20px; } }
+  @media screen and (max-width: 1280px) {
+    p {
+      font-size: 18px; } }
+  @media screen and (max-width: 360px) {
+    p {
+      font-size: 16px; } }
+</style>
+
 <body>
 
     <!-- Wrapper -->
@@ -23,11 +40,12 @@
                 <section>
                 	<header class="main">
                 		<h1>{{ page.title }}</h1>
+                    <div style="margin-bottom: 20px; font-style: italic;">Oleh {{page.author}}, {{ page.date | date_to_string }}</div>
                 	</header>
 
-                  {% if page.image %}
+                  <!-- {% if page.image %}
                 	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
-                  {% endif %}
+                  {% endif %} -->
 
                 {{ content }}
 
